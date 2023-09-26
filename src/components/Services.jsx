@@ -38,7 +38,7 @@ const Services = () => {
           </p>
         </Header>
         <Content>
-          <Slide cascade >
+          <Slide cascade triggerOnce>
             {services.map((service) => (
               <Box key={service.id}>
                 <BoxHeader>

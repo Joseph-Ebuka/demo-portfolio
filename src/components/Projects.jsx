@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
-import { Fade, Slide, Bounce } from "react-awesome-reveal";
+import {  Bounce } from "react-awesome-reveal";
 
 import gallery from "../assets/img/GalleyApp.png";
 import resturant from "../assets/img/resturant.png";
