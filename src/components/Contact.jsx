@@ -57,11 +57,7 @@ const Contact = () => {
             </div>
             <div>
               <label htmlFor="name">Message</label>
-              <textarea
-                name="message"
-                id="message"
-                
-              ></textarea>
+              <textarea name="message" id="message"></textarea>
             </div>
           </ReachOut>
         </Content>
@@ -105,7 +101,10 @@ const Wrapper = styled.div`
   padding: 20px;
 `;
 
-const Container = styled.div``;
+const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
 const Header = styled.div`
   span {
     color: #b3b1b1;
@@ -125,7 +124,7 @@ const Content = styled.div`
   gap: 20px;
   flex-wrap: wrap;
   background-color: #1d1d1d;
-  height: 400px;
+  height: max-content;
   width: 80vw;
   border-radius: 10px;
 `;
@@ -138,22 +137,22 @@ const ReachOut = styled.div`
   gap: 30px;
   justify-content: center;
   align-items: center;
-  div{
+  div {
     display: flex;
     flex-direction: column;
     text-align: left;
-    input{
+    input {
       background-color: transparent;
-      border:1px solid #02DAC5;
+      border: 1px solid #02dac5;
       outline: none;
       width: 300px;
       height: 50px;
       border-radius: 10px;
       color: white;
     }
-    textarea{
+    textarea {
       width: 300px;
-      height:100px;
+      height: 100px;
       border-radius: 10px;
       resize: none;
       background-color: transparent;

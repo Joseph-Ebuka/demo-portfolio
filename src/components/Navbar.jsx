@@ -14,7 +14,6 @@ const Navbar = () => {
             <span>About me</span>
             <span>Contact me</span>
           </Links>
-          <Button>View Resume</Button>
         </LinkResume>
       </Container>
     </Wrapper>
@@ -45,6 +44,9 @@ const LinkResume = styled.div`
   display: flex;
   align-items: center;
   gap: 50px;
+  @media (max-width:600px){
+    display: none;
+  }
 `;
 const Links = styled.div`
   display: flex;
