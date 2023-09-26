@@ -22,29 +22,17 @@ function About() {
         <div className="box2">
           <p>
             {" "}
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-            omnis exercitationem incidunt quibusdam expedita cupiditate dolorum,
-            necessitatibus tenetur eum minus, atque error ea doloremque modi
-            distinctio, facere dolore iure nostrum consequatur iste tempore
-            maiores sed ad? Dicta asperiores dolore tempore!
+            Ebuka, a Lagos-based coding enthusiast, is dedicated to mastering React on his path to becoming a frontend developer. With a strong passion for coding and a love for football, he aims to land a rewarding position in the tech industry.
           </p>
           <br />
           <p>
             {" "}
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-            omnis exercitationem incidunt quibusdam expedita cupiditate dolorum,
-            necessitatibus tenetur eum minus, atque error ea doloremque modi
-            distinctio, facere dolore iure nostrum consequatur iste tempore
-            maiores sed ad? Dicta asperiores dolore tempore!
+            Meet Ebuka, a frontend development enthusiast residing in Lagos, Nigeria. He's diving deep into React, driven by his ambition to secure a role in the tech world. When not coding, you'll find him cheering for his favorite football teams
           </p>
           <br />
           <p>
             {" "}
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-            omnis exercitationem incidunt quibusdam expedita cupiditate dolorum,
-            necessitatibus tenetur eum minus, atque error ea doloremque modi
-            distinctio, facere dolore iure nostrum consequatur iste tempore
-            maiores sed ad? Dicta asperiores dolore tempore!
+            Ebuka, hailing from vibrant Lagos, is on a coding journey with a focus on React. His determination to become a frontend developer fuels his learning. Alongside his tech passion, he's an avid football fan, aspiring to merge his interests in the tech industry.
           </p>
         </div>
       </div>
