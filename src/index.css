@@ -1,0 +1,185 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+}
+.topsection{
+  background-image:linear-gradient(#000000da,#000000d8), url(assets/img/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+body{
+  background-color: #131313;
+}
+.aboutSection {
+  background-color: #131313;
+}
+.aboutHeader {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.aboutHeader span:nth-child(1) {
+  color: #888;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.aboutHeader span:nth-child(2) {
+  text-transform: capitalize;
+  font-size: 20px;
+  color: #fff;
+}
+.start {
+  align-items: flex-start;
+}
+.aboutFlex {
+  display: flex;
+  padding: 2% 10%;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainAboutPic {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  background-image: url(./assets/img/ebuka.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: dontRotate 1s linear infinite;
+  background-size: cover;
+}
+.aboutFlex .box1 {
+  position: relative;
+  border: 1px solid #06fdfd49;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.aboutFlex .box2 {
+  width: 50%;
+  color: #fff;
+}
+.html,
+.css,
+.react {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.html {
+  right: 20px;
+}
+.css {
+  left: 30px;
+}
+.react {
+  bottom: -20px;
+  right: 40%;
+}
+
+.skillFlex {
+  display: flex;
+  padding: 2% 10%;
+  align-items: center;
+  justify-content: space-between;
+}
+.skillFlex .box1 {
+  width: 50%;
+  color: #fff;
+}
+.skillFlex .box2 {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.lang {
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: 500;
+  border: 1px solid #06fdfd49;
+  width: fit-content;
+  color: #fff;
+  background-color: #86868669;
+}
+.one {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+}
+.two {
+  border-radius: 10px;
+  display: grid;
+  padding: 20px 25px;
+  place-items: center;
+}
+.three {
+  border-radius: 30px;
+  display: grid;
+  padding: 20px 25px;
+  place-items: center;
+}
+.footerFlex{
+  display: flex;
+  align-items: flex-start;
+  padding: 2% 10%;
+  background-color: #262626;
+}
+.logo{
+  width: 30%;
+
+}
+.aside{
+  width: 70%;
+}
+.aside .box1{
+
+}
+.aside .box2{
+
+}
+.aside .box3{
+
+}
+.aboutFlex .box1,
+  .aboutFlex .box2,
+  .skillFlex .box1,
+  .skillFlex .box2 {
+    text-align: left;
+}
+.conclude{
+  border-top: 1px solid #888;
+  text-align: center;
+  padding: 10px 0 20px 0;
+  background-color: #262626;
+  color: #fff;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .aboutFlex,
+  .skillFlex {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .aboutFlex .box1 {
+    border: 1px solid transparent;
+  }
+  .aboutFlex .box2 {
+    z-index: 4;
+    padding-top: 20px ;
+  }
+  .aboutFlex .box1,
+  .aboutFlex .box2,
+  .skillFlex .box1,
+  .skillFlex .box2 {
+    width:100%;
+}
+}
