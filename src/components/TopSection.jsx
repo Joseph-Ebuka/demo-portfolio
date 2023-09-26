@@ -4,43 +4,47 @@ import { styled } from "styled-components";
 import { VscGithub } from "react-icons/vsc";
 import { AiOutlineMail, AiFillLinkedin } from "react-icons/ai";
 import { FiTwitter } from "react-icons/fi";
-const   TopSection = () => {
+import  { Fade, Bounce, Slide, Roll } from "react-awesome-reveal";
+const TopSection = () => {
   return (
     <>
       <Wrapper className="topsection">
         <Container>
           <Navbar />
           <MainContent>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <p>
-                HI, I am <strong>Joseph Ebuka David</strong>
-              </p>
-              <span>
-                A Seasoned <strong>Frontend Developer</strong> transforming
-                ideas into stunning <br /> digital experiences. lets create
-                something amazing!
-              </span>
-            </div>
-
-            <div>
-              <button>
-                <VscGithub />{" "}
-              </button>
-              <button>
-                <AiFillLinkedin />
-              </button>
-              <button>
-                <AiOutlineMail />
-              </button>
-              <button>
-                <FiTwitter />
-              </button>
-            </div>
+            <Bounce>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <p>
+                  HI, I am <strong>Joseph Ebuka David</strong>
+                </p>
+                <span>
+                  A Seasoned <strong>Frontend Developer</strong> transforming
+                  ideas into stunning <br /> digital experiences. lets create
+                  something amazing!
+                </span>
+              </div>
+            </Bounce>
+            <Slide>
+              <div>
+                <button>
+                  <VscGithub />{" "}
+                </button>
+                <button>
+                  <AiFillLinkedin />
+                </button>
+                <button>
+                  <AiOutlineMail />
+                </button>
+                <button>
+                  <FiTwitter />
+                </button>
+              </div>
+            </Slide>
           </MainContent>
         </Container>
       </Wrapper>

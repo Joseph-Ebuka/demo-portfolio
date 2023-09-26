@@ -1,8 +1,8 @@
 import React from "react";
-import reactlogo from "../assets/img/react.jpg"; 
+import reactlogo from "../assets/img/react.jpg";
 import css from "../assets/img/css..jpg";
 import html from "../assets/img/html.jpg";
-
+import { Slide, Bounce } from "react-awesome-reveal";
 function About() {
   return (
     <div className="aboutSection">
@@ -13,28 +13,45 @@ function About() {
         </span>
       </div>
       <div className="aboutFlex">
-        <div className="box1">
-          <img className="react" src={reactlogo} alt="React Logo" />
-          <img className="css" src={css} alt="CSS Logo" />
-          <img className="html" src={html} alt="HTML Logo" />
-          <div className="mainAboutPic"></div>
-        </div>
+        <Slide>
+          <div className="box1">
+            <img className="react" src={reactlogo} alt="React Logo" />
+            <img className="css" src={css} alt="CSS Logo" />
+            <img className="html" src={html} alt="HTML Logo" />
+            <div className="mainAboutPic"></div>
+          </div>
+        </Slide>
+       
+
         <div className="box2">
+        <Slide direction="right" >
+
           <p>
             {" "}
-            Ebuka, a Lagos-based coding enthusiast, is dedicated to mastering React on his path to becoming a frontend developer. With a strong passion for coding and a love for football, he aims to land a rewarding position in the tech industry.
+            Ebuka, a Lagos-based coding enthusiast, is dedicated to mastering
+            React on his path to becoming a frontend developer. With a strong
+            passion for coding and a love for football, he aims to land a
+            rewarding position in the tech industry.
           </p>
           <br />
           <p>
             {" "}
-            Meet Ebuka, a frontend development enthusiast residing in Lagos, Nigeria. He's diving deep into React, driven by his ambition to secure a role in the tech world. When not coding, you'll find him cheering for his favorite football teams
+            Meet Ebuka, a frontend development enthusiast residing in Lagos,
+            Nigeria. He's diving deep into React, driven by his ambition to
+            secure a role in the tech world. When not coding, you'll find him
+            cheering for his favorite football teams
           </p>
           <br />
           <p>
             {" "}
-            Ebuka, hailing from vibrant Lagos, is on a coding journey with a focus on React. His determination to become a frontend developer fuels his learning. Alongside his tech passion, he's an avid football fan, aspiring to merge his interests in the tech industry.
+            Ebuka, hailing from vibrant Lagos, is on a coding journey with a
+            focus on React. His determination to become a frontend developer
+            fuels his learning. Alongside his tech passion, he's an avid
+            football fan, aspiring to merge his interests in the tech industry.
           </p>
+        </Slide>
         </div>
+   
       </div>
       <div className="skillFlex">
         <div className="box1">
@@ -64,12 +81,15 @@ function About() {
           </p>
         </div>
         <div className="box2">
+          <Bounce>
+
           <div className="lang one">html5</div>
           <div className="lang two">javascript</div>
           <div className="lang three">tailwind</div>
           <div className="lang one">scss</div>
           <div className="lang two">typescript</div>
           <div className="lang three">next js</div>
+          </Bounce>
         </div>
       </div>
     </div>

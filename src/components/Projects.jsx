@@ -1,5 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
+import { Fade, Slide, Bounce } from "react-awesome-reveal";
 
 import gallery from "../assets/img/GalleyApp.png";
 import resturant from "../assets/img/resturant.png";
@@ -47,21 +48,23 @@ const Projects = () => {
           </p>
         </Header>
         <Content>
-          {projects.map((project) => (
-            <BoxWrapper>
-              <TopBox>
-                <TopBoxContent>
-                  <img src={project.img} alt="hello world" />
-                </TopBoxContent>
-              </TopBox>
-              <BottomBox>
-                <h3>
-                  <a href={project.link}>{project.name}</a>
-                </h3>
-                <span>{project.about}</span>
-              </BottomBox>
-            </BoxWrapper>
-          ))}
+          <Bounce>
+            {projects.map((project) => (
+              <BoxWrapper>
+                <TopBox>
+                  <TopBoxContent>
+                    <img src={project.img} alt="hello world" />
+                  </TopBoxContent>
+                </TopBox>
+                <BottomBox>
+                  <h3>
+                    <a href={project.link}>{project.name}</a>
+                  </h3>
+                  <span>{project.about}</span>
+                </BottomBox>
+              </BoxWrapper>
+            ))}
+          </Bounce>
         </Content>
       </Container>
     </Wrapper>

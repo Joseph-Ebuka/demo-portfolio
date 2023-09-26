@@ -2,11 +2,14 @@ import React from "react";
 import { styled } from "styled-components";
 import { IoCallOutline, IoLocationOutline } from "react-icons/io5";
 import { AiOutlineMail } from "react-icons/ai";
+import AwesomeReveal, {Bounce} from 'react-awesome-reveal';
+
 const Contact = () => {
   return (
     <Wrapper>
       <Container>
         <Header>
+          <Bounce>
           <span>Get in touch</span>
           <p>
             Contact <strong>Me</strong>
@@ -15,9 +18,13 @@ const Contact = () => {
             I am currently open to full time, contract or part time opportunites
             in <br /> <strong>Frontend Development</strong>
           </p>
+          </Bounce>
         </Header>
         <Content>
+          
           <Details>
+          <AwesomeReveal animation="leftSlide" duration={800} delay={300}>
+  {/* Your content goes here */}
             <div>
               <span>Have an awesome project idea?</span>
 
@@ -35,8 +42,11 @@ const Contact = () => {
                 <IoLocationOutline /> lagos Nigeria
               </span>
             </div>
+</AwesomeReveal>
+
           </Details>
           <ReachOut>
+          <AwesomeReveal animation="rightSlide" duration={800} delay={300}>
             <div>
               <label htmlFor="name">Full name</label>
               <input
@@ -59,6 +69,9 @@ const Contact = () => {
               <label htmlFor="name">Message</label>
               <textarea name="message" id="message"></textarea>
             </div>
+            <Button>Reach Out</Button>
+</AwesomeReveal>
+
           </ReachOut>
         </Content>
       </Container>
@@ -94,6 +107,13 @@ const Details = styled.div`
     }
   }
 `;
+const Button = styled.button`
+  background: #02dac5;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+`;
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -103,9 +123,9 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 `;
 const Header = styled.div`
   span {
@@ -129,6 +149,7 @@ const Content = styled.div`
   height: max-content;
   width: 80vw;
   border-radius: 10px;
+  padding: 10px;
 `;
 
 const ReachOut = styled.div`
@@ -151,6 +172,7 @@ const ReachOut = styled.div`
       height: 50px;
       border-radius: 10px;
       color: white;
+      font-size: 16px;
     }
     textarea {
       width: 300px;
@@ -159,6 +181,7 @@ const ReachOut = styled.div`
       resize: none;
       background-color: transparent;
       color: white;
+      font-size: 16px;
     }
   }
 `;

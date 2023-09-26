@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { PiCodeBold } from "react-icons/pi";
 import { HiOutlinePencilSquare } from "react-icons/hi2";
+import { Fade, Slide } from "react-awesome-reveal";
 
 const Services = () => {
   const services = [
@@ -37,23 +38,28 @@ const Services = () => {
           </p>
         </Header>
         <Content>
-          {services.map((service) => (
-            <Box key={service.id}>
-              <BoxHeader>
-                <span>{service.id}</span>
-              </BoxHeader>
-              <BoxContent>
-                <div>{service.icon}</div>
-                <Article>
-                  <h3>{service.title}</h3>
+          <Slide cascade >
+            {services.map((service) => (
+              <Box key={service.id}>
+                <BoxHeader>
+                  <span>{service.id}</span>
+                </BoxHeader>
+                <BoxContent>
+                  <div>{service.icon}</div>
+                  <Article>
+                    <h3>{service.title}</h3>
 
-                  <div>
-                    <span>{service.content}</span>
-                  </div>
-                </Article>
-              </BoxContent>
-            </Box>
-          ))}
+                    <div>
+                      <span>
+                        {" "}
+                        <Fade>{service.content}</Fade>
+                      </span>
+                    </div>
+                  </Article>
+                </BoxContent>
+              </Box>
+            ))}
+          </Slide>
         </Content>
       </Container>
     </Wrapper>
