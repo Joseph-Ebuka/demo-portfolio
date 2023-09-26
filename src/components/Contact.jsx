@@ -103,7 +103,9 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
+  justify-content: center;
+  align-items:center;
 `;
 const Header = styled.div`
   span {
