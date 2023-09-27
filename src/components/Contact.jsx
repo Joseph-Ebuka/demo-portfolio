@@ -2,76 +2,73 @@ import React from "react";
 import { styled } from "styled-components";
 import { IoCallOutline, IoLocationOutline } from "react-icons/io5";
 import { AiOutlineMail } from "react-icons/ai";
-import AwesomeReveal, {Bounce} from 'react-awesome-reveal';
+import AwesomeReveal, { Slide } from "react-awesome-reveal";
 
 const Contact = () => {
   return (
     <Wrapper>
       <Container>
-        <Header>
-          <Bounce>
-          <span>Get in touch</span>
-          <p>
-            Contact <strong>Me</strong>
-          </p>
-          <p>
-            I am currently open to full time, contract or part time opportunites
-            in <br /> <strong>Frontend Development</strong>
-          </p>
-          </Bounce>
-        </Header>
+        <Slide direction="up">
+          <Header>
+            <span>Get in touch</span>
+            <p>
+              Contact <strong>Me</strong>
+            </p>
+            <p>
+              I am currently open to full time, contract or part time
+              opportunites in <br /> <strong>Frontend Development</strong>
+            </p>
+          </Header>
+        </Slide>
         <Content>
-          
           <Details>
-          <AwesomeReveal animation="leftSlide" duration={800} delay={300}>
-  {/* Your content goes here */}
-            <div>
-              <span>Have an awesome project idea?</span>
+            <AwesomeReveal animation="leftSlide" duration={800} delay={300}>
+              {/* Your content goes here */}
+              <div>
+                <span>Have an awesome project idea?</span>
 
-              <strong>Lets discuss</strong>
-            </div>
+                <strong>Lets discuss</strong>
+              </div>
 
-            <div>
-              <span>
-                <IoCallOutline /> +2349042350500
-              </span>
-              <span>
-                <AiOutlineMail /> ebukaj665@gmail.com
-              </span>
-              <span>
-                <IoLocationOutline /> lagos Nigeria
-              </span>
-            </div>
-</AwesomeReveal>
-
+              <div>
+                <span>
+                  <IoCallOutline /> +2349042350500
+                </span>
+                <span>
+                  <AiOutlineMail /> ebukaj665@gmail.com
+                </span>
+                <span>
+                  <IoLocationOutline /> lagos Nigeria
+                </span>
+              </div>
+            </AwesomeReveal>
           </Details>
           <ReachOut>
-          <AwesomeReveal animation="rightSlide" duration={800} delay={300}>
-            <div>
-              <label htmlFor="name">Full name</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Enter name..."
-              />
-            </div>
-            <div>
-              <label htmlFor="email">Enter Email</label>
-              <input
-                type="text"
-                name="name"
-                id="email"
-                placeholder="Enter email..."
-              />
-            </div>
-            <div>
-              <label htmlFor="name">Message</label>
-              <textarea name="message" id="message"></textarea>
-            </div>
-            <Button>Reach Out</Button>
-</AwesomeReveal>
-
+            <AwesomeReveal animation="rightSlide" duration={800} delay={300}>
+              <div>
+                <label htmlFor="name">Full name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter name..."
+                />
+              </div>
+              <div>
+                <label htmlFor="email">Enter Email</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="email"
+                  placeholder="Enter email..."
+                />
+              </div>
+              <div>
+                <label htmlFor="name">Message</label>
+                <textarea name="message" id="message"></textarea>
+              </div>
+              <Button>Reach Out</Button>
+            </AwesomeReveal>
           </ReachOut>
         </Content>
       </Container>
